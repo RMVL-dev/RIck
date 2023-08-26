@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.rickcameras.di.doors.interfaces.DoorsRepository
+import com.example.rickcameras.di.repositories.interfaces.DoorsRepository
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException

@@ -1,12 +1,11 @@
 package com.example.rickcameras.mvvm.cameras
 
-import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.rickcameras.di.cameras.interfaces.CamerasRepository
+import com.example.rickcameras.di.repositories.interfaces.CamerasRepository
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException

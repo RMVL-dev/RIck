@@ -1,4 +1,4 @@
-package com.example.rickcameras.di.cameras.interfaces
+package com.example.rickcameras.di.repositories.interfaces
 
 import com.example.rickcameras.data.cameras.Cameras
 

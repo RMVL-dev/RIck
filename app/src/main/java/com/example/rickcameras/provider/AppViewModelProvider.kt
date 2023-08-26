@@ -6,12 +6,16 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.rickcameras.RickApplication
 import com.example.rickcameras.mvvm.cameras.CamerasViewModel
+import com.example.rickcameras.mvvm.doors.DoorsViewModel
 
 
 object AppViewModelProvider {
     val Factory = viewModelFactory {
         initializer {
-            CamerasViewModel(repository = rickApplication().camerasAppContainer.camerasRepository)
+            CamerasViewModel(repository = rickApplication().appContainer.camerasRepository)
+        }
+        initializer {
+            DoorsViewModel(repository = rickApplication().appContainer.doorsRepository)
         }
     }
 }

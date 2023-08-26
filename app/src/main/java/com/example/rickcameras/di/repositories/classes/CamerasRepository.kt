@@ -1,7 +1,7 @@
-package com.example.rickcameras.di.cameras.classes
+package com.example.rickcameras.di.repositories.classes
 
 import com.example.rickcameras.data.cameras.Cameras
-import com.example.rickcameras.di.cameras.interfaces.CamerasRepository
+import com.example.rickcameras.di.repositories.interfaces.CamerasRepository
 import com.example.rickcameras.network.CamerasService
 
 
