@@ -1,12 +1,19 @@
 package com.example.rickcameras.navigation
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.rickcameras.R
 import com.example.rickcameras.mvvm.cameras.CamerasViewModel
 import com.example.rickcameras.mvvm.doors.DoorsViewModel
 import com.example.rickcameras.provider.AppViewModelProvider
@@ -39,7 +46,17 @@ fun CamerasApp(
     )
     val pagerState = rememberPagerState()
     Scaffold(
-        topBar = {}
+        topBar = {
+            Row(
+                modifier = modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = stringResource(id = R.string.my_house),
+                    fontSize = 30.sp
+                )
+            }
+        }
     ) {paddingValues ->
         Column(
             modifier = modifier

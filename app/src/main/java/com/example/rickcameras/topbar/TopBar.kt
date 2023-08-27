@@ -6,6 +6,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.sp
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.PagerState
 import com.google.accompanist.pager.pagerTabIndicatorOffset
@@ -39,7 +40,10 @@ fun Tabs(
                 }
                       },
             text = {
-                Text(text = tabItem.title)
+                Text(
+                    text = tabItem.title,
+                    fontSize = 25.sp
+                )
                    },
             icon = {}
         )
