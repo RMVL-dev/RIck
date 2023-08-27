@@ -7,6 +7,8 @@ import kotlinx.serialization.Serializable
 data class DoorData(
     @SerialName("name")
     val name:String? = null,
+    @SerialName("snapshot")
+    val snapshot:String? = null,
     @SerialName("room")
     val room:String? = null,
     @SerialName("id")

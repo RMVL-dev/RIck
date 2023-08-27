@@ -21,6 +21,7 @@ import com.example.rickcameras.data.cameras.Cameras
 import com.example.rickcameras.data.doors.Doors
 import com.example.rickcameras.mvvm.doors.DoorsState
 import com.example.rickcameras.mvvm.doors.DoorsViewModel
+import com.example.rickcameras.navigation.CamerasApp
 import com.example.rickcameras.provider.AppViewModelProvider
 import com.example.rickcameras.ui.theme.RIckCamerasTheme
 
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    CamerasApp()
                 }
             }
         }

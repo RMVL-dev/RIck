@@ -73,4 +73,9 @@ dependencies {
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
     debugImplementation "androidx.compose.ui:ui-test-manifest"
     debugImplementation "androidx.compose.ui:ui-tooling"
+
+    //Pager
+    implementation "com.google.accompanist:accompanist-pager:0.25.0" // Pager
+    implementation "com.google.accompanist:accompanist-pager-indicators:0.25.0" // Pager Indicators
+
 }
