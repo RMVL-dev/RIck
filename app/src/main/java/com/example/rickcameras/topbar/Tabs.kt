@@ -1,11 +1,13 @@
 package com.example.rickcameras.topbar
 
+import androidx.compose.foundation.background
 import androidx.compose.material3.LeadingIconTab
 import androidx.compose.material3.TabRowDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.PagerState
@@ -30,7 +32,8 @@ fun Tabs(
                 tabPositions = tabPositions
                 )
             )
-        }
+        },
+        backgroundColor = Color.White
     ) { tabs.forEachIndexed { index, tabItem ->
         LeadingIconTab(
             selected = pagerState.currentPage == index,

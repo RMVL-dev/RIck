@@ -27,6 +27,7 @@ fun CamerasScreen(
     LazyColumn(
         modifier = modifier
             .fillMaxSize()
+            .padding(top = 8.dp)
     ){
         if (!cameras.data.cameras.isNullOrEmpty()) items(
             items = cameras.data.cameras

@@ -1,6 +1,9 @@
 package com.example.rickcameras.navigation
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.example.rickcameras.mvvm.cameras.CamerasState
 import com.example.rickcameras.mvvm.cameras.CamerasViewModel
 import com.example.rickcameras.mvvm.doors.DoorsState
@@ -18,11 +21,13 @@ fun TabContent(
     tabs:List<TabItem>,
     pagerState: PagerState,
     camerasViewModel: CamerasViewModel,
-    doorsViewModel: DoorsViewModel
+    doorsViewModel: DoorsViewModel,
+    modifier: Modifier = Modifier
 ){
     HorizontalPager(
         state = pagerState,
-        count = tabs.size
+        count = tabs.size,
+        //modifier = modifier.padding(top = 8.dp)
     ) { page ->
 
         when(tabs[page]){
